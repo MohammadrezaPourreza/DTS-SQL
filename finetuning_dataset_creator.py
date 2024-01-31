@@ -18,8 +18,6 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 def load_spider_train_set():
     df1 = pd.read_json("datasets/train_others.json")
     df2 = pd.read_json("datasets/train_spider.json")
-    # df3 = pd.read_json("datasets/bird_train.json")
-    # df = pd.concat([df1, df2, df3])
     df = pd.concat([df1, df2])
     df = df.reset_index(drop=True)
     return df
