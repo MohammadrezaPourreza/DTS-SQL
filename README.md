@@ -20,6 +20,9 @@ This repository hosts the code for the DTS-SQL paper, featuring state-of-the-art
 ### Utilities
 - `Utils` directory: Contains all necessary helper functions for formatting tables and creating the dataset.
 
+### Results
+- All of the results are stored in the results directory.
+
 ### Citation
 #TODO
 
