@@ -24,7 +24,12 @@ This repository hosts the code for the DTS-SQL paper, featuring state-of-the-art
 - All of the results are stored in the results directory.
 
 ### Citation
-#TODO
+@article{pourreza2024dts,
+  title={DTS-SQL: Decomposed Text-to-SQL with Small Large Language Models},
+  author={Pourreza, Mohammadreza and Rafiei, Davood},
+  journal={arXiv preprint arXiv:2402.01117},
+  year={2024}
+}
 
 
 
