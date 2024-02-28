@@ -1,0 +1,17 @@
+accelerate==0.27.2
+bitsandbytes==0.42.0
+peft==0.9.0
+transformers==4.38.1
+datasets==2.17.1
+trl==0.7.11
+torch==2.1.0+cu118
+torchaudio==2.1.0+cu118
+torchvision==0.16.0+cu118
+tornado==6.3.3
+tqdm==4.66.2
+flash-attn==2.5.5
+sql_metadata==2.10.0
+safetensors==0.4.2
+scipy==1.12.0
+gdown==5.1.0
+pandas==2.2.1
