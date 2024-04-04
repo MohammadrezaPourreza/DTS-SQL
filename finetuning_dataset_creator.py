@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from tqdm import tqdm
 from utils.database_formatter import get_table_schema_with_samples, get_all_table_names
@@ -111,6 +112,7 @@ if __name__ == "__main__":
     print(f"Full finetuning set errors: {full_finetuning_errors}")
     print(f"Filtered finetuning set errors: {filtered_finetuning_errors}")
     df = pd.DataFrame(finetuning_dataset)
+    os.makedirs("training", exist_ok=True)
     df.to_csv("training/full_finetuning_dataset.csv", index=False)
     df = pd.DataFrame(filtered_finetuning_dataset)
     df.to_csv("training/filtered_finetuning_dataset.csv", index=False)
@@ -149,6 +151,7 @@ if __name__ == "__main__":
     print(f"Validation set errors: {validation_set_errors}")
     # Save validation dataset
     df = pd.DataFrame(validation_dataset)
+    os.makedirs("validation", exist_ok=True)
     df.to_csv("validation/spider_syn_dataset.csv", index=False)
     df = pd.DataFrame(validation_dataset_fromatted)
     df.to_csv("validation/spider_syn_dataset_formatted.csv", index=False)
